@@ -22,7 +22,7 @@ public class Heat extends BasePower {
 
     //0 = below a third of THRESHOLD, 1 = a third to two thirds, 2 = two thirds and up.
     public int tier() {
-        return amount * 3 / THRESHOLD;
+        return amount * 2 / THRESHOLD;
     }
 
     //Tier 1 and 2: attacks deal 1 more damage.
@@ -34,7 +34,7 @@ public class Heat extends BasePower {
     //Tier 2: 1 extra energy each turn.
     @Override
     public void atStartOfTurn() {
-        if (tier() >= 2) {
+        if (tier() >= 1) {
             flash();
             addToBot(new GainEnergyAction(1));
         }
