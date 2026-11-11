@@ -31,6 +31,7 @@ public class TheWorldAflame extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractCard ca : AbstractDungeon.player.hand.group) {
             addToBot(new ExhaustSpecificCardAction(ca, AbstractDungeon.player.hand));
+            addToBot(new ChantAction(1));
         }
     }
 

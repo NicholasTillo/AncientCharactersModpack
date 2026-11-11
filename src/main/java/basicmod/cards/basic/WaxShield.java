@@ -17,8 +17,8 @@ public class WaxShield extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-    private static final int BLOCK = 6;
-    private static final int BLOCK_UPG = 3;
+    private static final int BLOCK = 3;
+    private static final int BLOCK_UPG = 1;
 
     public WaxShield() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

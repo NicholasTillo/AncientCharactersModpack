@@ -19,6 +19,20 @@
       " Block at the end of your turn, then reduce this by 1."
     ]
   },
+  "${modID}:WaxStrength": {
+    "NAME": "Wax Strength",
+    "DESCRIPTIONS": [
+      "Attacks deal #b",
+      " additional damage. At the end of your turn, reduce this by 1."
+    ]
+  },
+  "${modID}:WaxWeakness": {
+    "NAME": "Wax Weakness",
+    "DESCRIPTIONS": [
+      "Attacks deal #b",
+      " less damage. At the end of its turn, reduce this by 1."
+    ]
+  },
   "${modID}:Heat": {
     "NAME": "Heat",
     "DESCRIPTIONS": [

@@ -37,13 +37,17 @@
     "NAME": "Wax Ball Slide",
     "DESCRIPTION": "Deal !D! damage, then slide right to each other enemy for !M! less each time."
   },
+  "${modID}:SnuffingStrike": {
+    "NAME": "Snuffing Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
-    "DESCRIPTION": "Gain !B! Block. NL ${modID}:Chant."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
   },
   "${modID}:RitualJammaSlamma": {
     "NAME": "Ritual Jamma Slamma",
-    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each ritual completed this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each Chant completed this combat."
   },
   "${modID}:SturdyBody": {
     "NAME": "Sturdy Body",
@@ -63,7 +67,31 @@
   },
   "${modID}:RitualMultihit": {
     "NAME": "Ritual Multihit",
-    "DESCRIPTION": "Deal !D! damage. NL Hits an additional time for each ritual completed this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Hits an additional time for each Chant completed this combat."
+  },
+  "${modID}:Chant": {
+    "NAME": "Chant",
+    "DESCRIPTION": "${modID}:Chant. NL If you have completed a Chant this combat, ${modID}:Chant !M! times instead."
+  },
+  "${modID}:RitualSlash": {
+    "NAME": "Ritual Slash",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Chant once for each unblocked damage dealt. NL Exhaust."
+  },
+  "${modID}:TheWorldAflame": {
+    "NAME": "The World Aflame",
+    "DESCRIPTION": "Exhaust your hand. NL ${modID}:Chant once for each card Exhausted."
+  },
+  "${modID}:IntangebleCard": {
+    "NAME": "Intangible",
+    "DESCRIPTION": "Gain !M! Intangible. NL Exhaust."
+  },
+  "${modID}:WaxStrengthCard": {
+    "NAME": "Wax Strength",
+    "DESCRIPTION": "Gain !M! Wax Strength."
+  },
+  "${modID}:DebuffWaxWeaknessCard": {
+    "NAME": "Wax Weakness",
+    "DESCRIPTION": "Apply X Wax Weakness."
   }
 }
 
