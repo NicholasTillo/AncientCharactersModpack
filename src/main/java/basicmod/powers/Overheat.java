@@ -25,6 +25,7 @@ public class Overheat extends BasePower{
         // Gain 3 Strength.
         addToBot(new DrawCardAction(3));
         addToBot(new GainEnergyAction(3));
+        addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, 3), 3));
         addToBot(new ApplyPowerAction(owner, owner, new LoseStrengthPower(owner, 3), 3));
     }
 
