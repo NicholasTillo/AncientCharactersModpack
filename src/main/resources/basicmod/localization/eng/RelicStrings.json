@@ -5,5 +5,14 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:SmolderingWick": {
+    "NAME": "Smoldering Wick",
+    "FLAVOR": "It never quite goes out.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " Heat. Whenever you lose HP, gain #b",
+      " Heat for each HP lost."
+    ]
   }
 }

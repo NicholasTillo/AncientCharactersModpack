@@ -1,5 +1,12 @@
 [
   {
+    "PROPER_NAME": "Chant",
+    "NAMES": [
+      "chant"
+    ],
+    "DESCRIPTION": "Advance the Chant track. Every 4 Chants, add a Chant card to your hand."
+  },
+  {
     "PROPER_NAME": "This is displayed in the tooltip.",
     "NAMES": [
       "these",

@@ -4,5 +4,42 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:ChantPower": {
+    "NAME": "Chant",
+    "DESCRIPTIONS": [
+      "Chant #b",
+      " more time(s) to add a Chant card to your hand."
+    ]
+  },
+  "${modID}:MeltingBlock": {
+    "NAME": "Melting Block",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " Block at the end of your turn, then reduce this by 1."
+    ]
+  },
+  "${modID}:Heat": {
+    "NAME": "Heat",
+    "DESCRIPTIONS": [
+      "Upon reaching #b",
+      " Heat, start Overheating.",
+      " NL Current benefits: #b",
+      " extra attack damage, #b",
+      " extra [E] each turn."
+    ]
+  },
+  "${modID}:Burnout": {
+    "NAME": "Burnout",
+    "DESCRIPTIONS": [
+      "Burnt out after Overheating."
+    ]
+  },
+
+  "${modID}:Overheat": {
+    "NAME": "Overheating",
+    "DESCRIPTIONS": [
+      "OVERHEATING, All Candles Ablaze"
+    ]
   }
 }

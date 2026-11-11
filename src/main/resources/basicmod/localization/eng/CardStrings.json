@@ -8,5 +8,62 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:ChantCard": {
+    "NAME": "Chant",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "I think itll be a strike !D!. NL Second line."
+  },
+  "${modID}:AgonizingWords": {
+    "NAME": "Agonizing Words",
+    "DESCRIPTION": " Chant NL Deal !D! Damage."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": " Gain !B! Block."
+  },
+  "${modID}:WaxShield": {
+    "NAME": "Wax Shield",
+    "DESCRIPTION": " Gain !B! Melting Block."
+  },
+  "${modID}:FireStrike": {
+    "NAME": "Fire Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Heat."
+  },
+  "${modID}:WaxBallSlide": {
+    "NAME": "Wax Ball Slide",
+    "DESCRIPTION": "Deal !D! damage, then slide right to each other enemy for !M! less each time."
+  },
+  "${modID}:RitualDefend": {
+    "NAME": "Ritual Defend",
+    "DESCRIPTION": "Gain !B! Block. NL ${modID}:Chant."
+  },
+  "${modID}:RitualJammaSlamma": {
+    "NAME": "Ritual Jamma Slamma",
+    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each ritual completed this combat."
+  },
+  "${modID}:SturdyBody": {
+    "NAME": "Sturdy Body",
+    "DESCRIPTION": "Gain !B! Block. NL If your Heat is at least a third of your Max HP, gain !M! more."
+  },
+  "${modID}:CalmingSage": {
+    "NAME": "Calming Sage",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak to ALL enemies."
+  },
+  "${modID}:ExpungeFire": {
+    "NAME": "Expunge Fire",
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL Deal !M! damage to ALL enemies. NL Lose 10 Heat."
+  },
+  "${modID}:RitualBlast": {
+    "NAME": "Ritual Blast",
+    "DESCRIPTION": "${modID}:Chant !M! times. NL Deal !D! damage. NL Exhaust."
+  },
+  "${modID}:RitualMultihit": {
+    "NAME": "Ritual Multihit",
+    "DESCRIPTION": "Deal !D! damage. NL Hits an additional time for each ritual completed this combat."
   }
 }
+
