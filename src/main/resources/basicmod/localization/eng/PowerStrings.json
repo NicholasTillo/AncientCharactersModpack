@@ -40,6 +40,20 @@
       " turn(s), draw #b1 additional card at the start of your turn."
     ]
   },
+  "${modID}:LetHimCookPower": {
+    "NAME": "Let Him Cook",
+    "DESCRIPTIONS": [
+      "At the end of combat, if you Overheated this combat, heal #b",
+      " HP."
+    ]
+  },
+  "${modID}:FaithPower": {
+    "NAME": "Faith",
+    "DESCRIPTIONS": [
+      "Whenever you Chant, gain #b",
+      " Block."
+    ]
+  },
   "${modID}:Heat": {
     "NAME": "Heat",
     "DESCRIPTIONS": [

@@ -85,6 +85,33 @@
     "NAME": "Fervor",
     "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity."
   },
+  "${modID}:LetHimCook": {
+    "NAME": "Let Him Cook",
+    "DESCRIPTION": "At the end of combat, if you Overheated this combat, heal !M! HP."
+  },
+  "${modID}:DissonantVerse": {
+    "NAME": "Dissonant Verse",
+    "DESCRIPTION": "Lose all ${modID}:Chant progress. NL Deal !D! damage."
+  },
+  "${modID}:SplashWax": {
+    "NAME": "Splash Wax",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust a card in your hand. If it was a Burn, deal !M! additional damage. NL Lose 10 Heat."
+  },
+  "${modID}:Faith": {
+    "NAME": "Faith",
+    "DESCRIPTION": "Whenever you ${modID}:Chant, gain !M! Block."
+  },
+  "${modID}:Vent": {
+    "NAME": "Vent",
+    "DESCRIPTION": "Lose half of your Heat. NL Deal damage equal to half the Heat lost.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "${modID}:Inferno": {
+    "NAME": "Inferno",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for every 10 Heat you have."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
