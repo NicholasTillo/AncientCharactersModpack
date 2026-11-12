@@ -16,7 +16,7 @@ public class ApplyDebuffWaxWeakness extends AbstractGameAction {
     @Override
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
-        addToTop(new ApplyPowerAction(target, p, new DebuffWaxWeakness(p, amount), amount));
+        addToTop(new ApplyPowerAction(target, p, new DebuffWaxWeakness(target, amount), amount));
         isDone = true;
     }
 }

@@ -41,7 +41,7 @@ public class InvokeLightning extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i = 0; i <= magicNumber; i++){
+        for(int i = 0; i < magicNumber; i++){
             addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
         }
     }

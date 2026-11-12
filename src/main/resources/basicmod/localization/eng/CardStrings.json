@@ -112,6 +112,18 @@
     "NAME": "Inferno",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for every 10 Heat you have."
   },
+  "${modID}:InvokeLightning": {
+    "NAME": "Invoke Lightning",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times."
+  },
+  "${modID}:ChainsOfBinding": {
+    "NAME": "Chains of Binding",
+    "DESCRIPTION": "Apply !M! Weak. NL Exhaust."
+  },
+  "${modID}:Harden": {
+    "NAME": "Harden",
+    "DESCRIPTION": "Gain !M! Waxy Dexterity."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."

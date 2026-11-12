@@ -32,6 +32,6 @@ public class ChainsOfBinding extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, m, new WeakPower(p,magicNumber,false)));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false), magicNumber));
     }
 }

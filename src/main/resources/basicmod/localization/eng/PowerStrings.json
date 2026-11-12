@@ -33,6 +33,13 @@
       " less damage. At the end of its turn, reduce this by 1."
     ]
   },
+  "${modID}:WaxyDexterity": {
+    "NAME": "Waxy Dexterity",
+    "DESCRIPTIONS": [
+      "Cards grant #b",
+      " additional Block. At the end of your turn, reduce this by 1."
+    ]
+  },
   "${modID}:WaxyDraws": {
     "NAME": "Waxy Draws",
     "DESCRIPTIONS": [
