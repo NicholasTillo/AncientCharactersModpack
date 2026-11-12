@@ -22,7 +22,7 @@ public class Chant extends BaseCard {
     );
 
 
-    private static final int CHANT = 1;
+    private static final int CHANT = 2;
     private static final int CHANT_UPG = 1;
 
     public Chant() {
@@ -32,7 +32,7 @@ public class Chant extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractPower chant = AbstractDungeon.player.getPower(ChantPower.POWER_ID);
-        int completed = chant == null ? 0 : ((ChantPower) chant).amount2;
+        int completed = chant == null ? 0 : ((ChantPower) chant).completedThisTurn;
         if(completed > 0){
             addToBot(new ChantAction(magicNumber));
         }

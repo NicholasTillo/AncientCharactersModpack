@@ -114,7 +114,7 @@
   },
   "${modID}:InvokeLightning": {
     "NAME": "Invoke Lightning",
-    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times."
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL Exhaust."
   },
   "${modID}:ChainsOfBinding": {
     "NAME": "Chains of Binding",
@@ -154,7 +154,7 @@
   },
   "${modID}:Chant": {
     "NAME": "Chant",
-    "DESCRIPTION": "${modID}:Chant. NL If you have completed a Chant this combat, ${modID}:Chant !M! times instead."
+    "DESCRIPTION": "${modID}:Chant. NL If you have completed a Chant this turn, ${modID}:Chant !M! times instead."
   },
   "${modID}:RitualSlash": {
     "NAME": "Ritual Slash",

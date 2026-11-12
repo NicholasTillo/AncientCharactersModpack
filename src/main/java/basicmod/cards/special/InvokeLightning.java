@@ -36,6 +36,7 @@ public class InvokeLightning extends BaseCard {
 
         setDamage(DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(HIT_TIMES,HIT_TIMES_UPG);
+        setExhaust(true);
 
         tags.add(ChantTier.CHANT_UNCOMMON);
     }

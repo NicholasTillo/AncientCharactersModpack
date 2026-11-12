@@ -2,6 +2,7 @@ package basicmod.cards.common;
 
 import basicmod.actions.GainWaxStrength;
 import basicmod.actions.GainWaxyDex;
+import basicmod.actions.LoseHeatAction;
 import basicmod.cards.BaseCard;
 import basicmod.character.CharFar;
 import basicmod.util.CardStats;
@@ -35,6 +36,7 @@ public class Harden extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainWaxyDex(magicNumber));
+        addToBot(new LoseHeatAction(5));
     }
 }
 
