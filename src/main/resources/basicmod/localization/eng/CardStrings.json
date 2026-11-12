@@ -124,6 +124,18 @@
     "NAME": "Harden",
     "DESCRIPTION": "Gain !M! Waxy Dexterity."
   },
+  "${modID}:Lorem": {
+    "NAME": "Lorem",
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust."
+  },
+  "${modID}:Ipsum": {
+    "NAME": "Ipsum",
+    "DESCRIPTION": "Gain !M! Artifact. NL Gain !B! Melting Block. NL Exhaust."
+  },
+  "${modID}:Tarot": {
+    "NAME": "Tarot",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
