@@ -4,7 +4,7 @@
     "NAMES": [
       "chant"
     ],
-    "DESCRIPTION": "Advance the Chant track. Every 4 Chants, add a Chant card to your hand."
+    "DESCRIPTION": "Advance the Chant track. Every 4 Chants, choose 1 of 3 Chant cards to add to your hand."
   },
   {
     "PROPER_NAME": "This is displayed in the tooltip.",

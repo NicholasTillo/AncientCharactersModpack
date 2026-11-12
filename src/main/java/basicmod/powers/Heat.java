@@ -20,18 +20,18 @@ public class Heat extends BasePower {
         updateDescription();
     }
 
-    //0 = below a third of THRESHOLD, 1 = a third to two thirds, 2 = two thirds and up.
+    //0 = below half of THRESHOLD, 1 = half and up.
     public int tier() {
         return amount * 2 / THRESHOLD;
     }
 
-    //Tier 1 and 2: attacks deal 1 more damage.
+    //Tier 1: attacks deal 1 more damage.
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         return type == DamageInfo.DamageType.NORMAL && tier() >= 1 ? damage + 1 : damage;
     }
 
-    //Tier 2: 1 extra energy each turn.
+    //Tier 1: 1 extra energy each turn.
     @Override
     public void atStartOfTurn() {
         if (tier() >= 1) {
@@ -62,9 +62,7 @@ public class Heat extends BasePower {
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + THRESHOLD + DESCRIPTIONS[1]
-                + DESCRIPTIONS[2] + (tier() >= 1 ? 1 : 0)
-                + DESCRIPTIONS[3] + (tier() >= 2 ? 1 : 0)
-                + DESCRIPTIONS[4];
+        //(THRESHOLD + 1) / 2 is the lowest Heat where tier() reaches 1.
+        description = DESCRIPTIONS[0] + (THRESHOLD + 1) / 2 + DESCRIPTIONS[1] + THRESHOLD + DESCRIPTIONS[2];
     }
 }

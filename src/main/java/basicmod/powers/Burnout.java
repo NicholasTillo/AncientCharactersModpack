@@ -24,10 +24,15 @@ public class Burnout extends BasePower {
         super(POWER_ID, PowerType.BUFF, false, owner, 1);
     }
 
+    //Heat drops to 0 as soon as Burnout starts. GainHeatAction blocks Heat gain while this is active, so it stays at 0.
+    @Override
+    public void onInitialApplication() {
+        addToBot(new ResetHeatAction());
+    }
+
     @Override
     public void atEndOfRound() {
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        addToBot(new ResetHeatAction());
     }
 
     @Override

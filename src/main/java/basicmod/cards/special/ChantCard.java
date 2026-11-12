@@ -25,6 +25,7 @@ public class ChantCard extends BaseCard {
 
         setBlock(BLOCK, BLOCK_UPG);
         setExhaust(true);
+        tags.add(ChantTier.CHANT_COMMON);
     }
 
     @Override

@@ -32,11 +32,24 @@ public class SturdyBody extends BaseCard {
         setBlock(BLOCK, BLOCK_UPG);
         setMagic(MAGIC, MAGIC_UPG);
     }
+    private static boolean hot() {
+        AbstractPower heat = AbstractDungeon.player.getPower(Heat.POWER_ID); //null when the player has no Heat
+        return heat != null && ((Heat) heat).tier() >= 1;
+    }
+
+    //The bonus is added to the base Block, so Dexterity and Frail apply to the total.
+    @Override
+    protected void applyPowersToBlock() {
+        int realBase = baseBlock;
+        if (!hot()) baseBlock += magicNumber;
+        super.applyPowersToBlock();
+        baseBlock = realBase;
+        isBlockModified = block != baseBlock;
+    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractPower heat = p.getPower(Heat.POWER_ID); //null when the player has no Heat
-        boolean hot = heat != null && ((Heat) heat).tier() >= 1;
-        addToBot(new GainBlockAction(p, p, hot ? block : block + magicNumber ));
+        addToBot(new GainBlockAction(p, p, block));
     }
 
 }

@@ -26,6 +26,7 @@ public class IntangebleCard extends BaseCard {
 
         setMagic(INT_NUMBER, INT_NUMBER_UPG);
         setExhaust(true);
+        tags.add(ChantTier.CHANT_RARE);
     }
 
     @Override

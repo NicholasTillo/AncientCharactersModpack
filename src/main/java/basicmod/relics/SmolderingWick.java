@@ -13,7 +13,7 @@ import static basicmod.BasicMod.makeID;
 public class SmolderingWick extends BaseRelic {
     public static final String ID = makeID("SmolderingWick");
     private static final int HEAT_PER_TURN = 5;
-    private static final int HEAT_PER_DAMAGE = 10;
+    private static final int HEAT_PER_DAMAGE = 2;
 
     public SmolderingWick() {
         super(ID, "SmolderingWick", CharFar.Meta.CARD_COLOR, RelicTier.STARTER, LandingSound.MAGICAL);

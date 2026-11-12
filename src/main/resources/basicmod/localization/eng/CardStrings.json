@@ -41,6 +41,50 @@
     "NAME": "Snuffing Strike",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
+  "${modID}:ProtectiveChant": {
+    "NAME": "Protective Chant",
+    "DESCRIPTION": "Gain !B! Block. NL If you completed a Chant this turn, gain !M! more."
+  },
+  "${modID}:BigFlammaFlex": {
+    "NAME": "Big Flamma Flex",
+    "DESCRIPTION": "Gain !M! Heat. NL At the end of your turn, lose !M! Heat."
+  },
+  "${modID}:Stoke": {
+    "NAME": "Stoke",
+    "DESCRIPTION": "Gain !M! Heat. NL If your Heat is below half of your Max HP, gain !M! more."
+  },
+  "${modID}:SmokeSignals": {
+    "NAME": "Smoke Signals",
+    "DESCRIPTION": "For the next !M! turns, draw 1 additional card at the start of your turn."
+  },
+  "${modID}:VulnerabilityHex": {
+    "NAME": "Vulnerability Hex",
+    "DESCRIPTION": "${modID}:Chant. NL Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "${modID}:FreeStrike": {
+    "NAME": "Free Strike",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust."
+  },
+  "${modID}:Scrying": {
+    "NAME": "Scrying",
+    "DESCRIPTION": "Scry !M!. NL Draw 1 card. NL Exhaust."
+  },
+  "${modID}:TutorTwo": {
+    "NAME": "Tutor Two",
+    "DESCRIPTION": "Choose a card from your draw pile and add it to your hand. NL Upgrade it. It costs 0 this turn. NL Exhaust."
+  },
+  "${modID}:InvokeGlart": {
+    "NAME": "Invoke Glart",
+    "DESCRIPTION": "Draw cards until your hand is full. NL Exhaust."
+  },
+  "${modID}:Outburst": {
+    "NAME": "Outburst",
+    "DESCRIPTION": "Play the top !M! cards of your draw pile. NL Exhaust."
+  },
+  "${modID}:Fervor": {
+    "NAME": "Fervor",
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
@@ -51,7 +95,7 @@
   },
   "${modID}:SturdyBody": {
     "NAME": "Sturdy Body",
-    "DESCRIPTION": "Gain !B! Block. NL If your Heat is at least a third of your Max HP, gain !M! more."
+    "DESCRIPTION": "Gain !B! Block. NL If your Heat is below half of your Max HP, gain !M! more."
   },
   "${modID}:CalmingSage": {
     "NAME": "Calming Sage",

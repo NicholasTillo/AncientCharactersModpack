@@ -9,7 +9,7 @@
     "NAME": "Chant",
     "DESCRIPTIONS": [
       "Chant #b",
-      " more time(s) to add a Chant card to your hand."
+      " more time(s) to choose 1 of 3 Chant cards to add to your hand."
     ]
   },
   "${modID}:MeltingBlock": {
@@ -33,14 +33,26 @@
       " less damage. At the end of its turn, reduce this by 1."
     ]
   },
+  "${modID}:WaxyDraws": {
+    "NAME": "Waxy Draws",
+    "DESCRIPTIONS": [
+      "For the next #b",
+      " turn(s), draw #b1 additional card at the start of your turn."
+    ]
+  },
   "${modID}:Heat": {
     "NAME": "Heat",
     "DESCRIPTIONS": [
-      "Upon reaching #b",
-      " Heat, start Overheating.",
-      " NL Current benefits: #b",
-      " extra attack damage, #b",
-      " extra [E] each turn."
+      "While you have #b",
+      " or more Heat, attacks deal #b1 additional damage and you gain [E] at the start of your turn. NL Upon reaching #b",
+      " Heat, lose it and start Overheating."
+    ]
+  },
+  "${modID}:LoseHeatPower": {
+    "NAME": "Heat Down",
+    "DESCRIPTIONS": [
+      "At the end of your turn, lose #b",
+      " Heat."
     ]
   },
   "${modID}:Burnout": {

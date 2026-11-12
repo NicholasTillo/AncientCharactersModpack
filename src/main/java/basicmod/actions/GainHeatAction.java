@@ -1,5 +1,6 @@
 package basicmod.actions;
 
+import basicmod.powers.Burnout;
 import basicmod.powers.Heat;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -16,7 +17,9 @@ public class GainHeatAction extends AbstractGameAction {
     @Override
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
-        addToTop(new ApplyPowerAction(p, p, new Heat(p, amount), amount));
+        if (!p.hasPower(Burnout.POWER_ID)) { //No Heat while burnt out.
+            addToTop(new ApplyPowerAction(p, p, new Heat(p, amount), amount));
+        }
         isDone = true;
     }
 }
