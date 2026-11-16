@@ -22,6 +22,7 @@ public class WaxShield extends BaseCard {
 
     public WaxShield() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(basicmod.cards.CustomTags.WAX);
 
         setBlock(BLOCK, BLOCK_UPG); //Sets the card's damage and how much it changes when upgraded.
         tags.add(CardTags.STARTER_DEFEND);

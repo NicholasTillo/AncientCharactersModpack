@@ -12,6 +12,27 @@
       " more time(s) to choose 1 of 3 Chant cards to add to your hand."
     ]
   },
+  "${modID}:WaxMastery": {
+    "NAME": "Wax Mastery",
+    "DESCRIPTIONS": [
+      "Your Wax cards deal #b",
+      " additional damage and apply that much more of their Wax effects."
+    ]
+  },
+  "${modID}:ChantMaxingPower": {
+    "NAME": "Chant Maxing",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Chant #b",
+      " time(s)."
+    ]
+  },
+  "${modID}:WaxCoated": {
+    "NAME": "Wax Coated",
+    "DESCRIPTIONS": [
+      "At the end of its turn, takes #b",
+      " damage."
+    ]
+  },
   "${modID}:MeltingBlock": {
     "NAME": "Melting Block",
     "DESCRIPTIONS": [

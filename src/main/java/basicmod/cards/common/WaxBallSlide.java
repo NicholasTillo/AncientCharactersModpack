@@ -29,6 +29,7 @@ public class WaxBallSlide extends BaseCard {
 
     public WaxBallSlide() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(basicmod.cards.CustomTags.WAX);
 
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(DROP);
@@ -40,7 +41,7 @@ public class WaxBallSlide extends BaseCard {
         for (int i = 0, hits = 0; i < mons.size(); i++) {
             AbstractMonster mo = mons.get((mons.indexOf(m) + i) % mons.size());
             if (mo.isDeadOrEscaped()) continue;
-            DamageInfo dmg = new DamageInfo(p, baseDamage - magicNumber * hits++, DamageInfo.DamageType.NORMAL);
+            DamageInfo dmg = new DamageInfo(p, baseDamage + basicmod.powers.WaxMastery.bonus() - magicNumber * hits++, DamageInfo.DamageType.NORMAL);
             dmg.applyPowers(p, mo); //Strength, Weak, and this enemy's Vulnerable
             addToBot(new DamageAction(mo, dmg, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }

@@ -23,6 +23,7 @@ public class DebuffWaxWeaknessCard extends BaseCard {
 
     public DebuffWaxWeaknessCard() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(basicmod.cards.CustomTags.WAX);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -31,6 +32,7 @@ public class DebuffWaxWeaknessCard extends BaseCard {
             x += 2;
             p.getRelic(ChemicalX.ID).flash();
         }
+        x += basicmod.powers.WaxMastery.bonus();
         addToBot(new ApplyDebuffWaxWeakness(m, x));
 
         if (!freeToPlayOnce) {

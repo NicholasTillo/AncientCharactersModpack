@@ -32,6 +32,8 @@ public class SmokeSignals extends BaseCard {
 
     public SmokeSignals() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(basicmod.cards.CustomTags.WAX);
+        tags.add(basicmod.cards.CustomTags.WAX_MAGIC);
         setMagic(DRAW_UP, DRAW_UP_UPG);
     }
     @Override

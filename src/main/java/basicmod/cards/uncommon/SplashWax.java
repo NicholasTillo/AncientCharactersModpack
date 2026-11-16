@@ -31,6 +31,8 @@ public class SplashWax extends BaseCard {
 
     public SplashWax() {
         super(ID, info);
+        tags.add(basicmod.cards.CustomTags.WAX);
+        tags.add(basicmod.cards.CustomTags.WAX_MAGIC);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(BURN_BONUS);
     }

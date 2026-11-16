@@ -31,6 +31,8 @@ public class Harden extends BaseCard {
 
     public Harden() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(basicmod.cards.CustomTags.WAX);
+        tags.add(basicmod.cards.CustomTags.WAX_MAGIC);
         setMagic(STR_UP, STR_UP_UPG);
     }
     @Override

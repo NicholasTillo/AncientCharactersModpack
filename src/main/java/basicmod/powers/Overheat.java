@@ -1,16 +1,23 @@
 package basicmod.powers;
 
+import basemod.BaseMod;
+import basicmod.cards.common.Wisps;
 import com.evacipated.cardcrawl.mod.stslib.patches.bothInterfaces.OnReceivePowerPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+
+import java.util.ArrayList;
 
 import static basicmod.BasicMod.makeID;
 
@@ -32,6 +39,14 @@ public class Overheat extends BasePower{
         addToBot(new GainEnergyAction(3));
         addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, 3), 3));
         addToBot(new ApplyPowerAction(owner, owner, new LoseStrengthPower(owner, 3), 3));
+        AbstractPlayer p = AbstractDungeon.player;
+        for (CardGroup pile : new CardGroup[]{p.drawPile, p.discardPile}) {
+            for (AbstractCard c : new ArrayList<>(pile.group)) {
+                if (c instanceof Wisps && p.hand.size() < BaseMod.MAX_HAND_SIZE) {
+                    pile.moveToHand(c, pile);
+                }
+            }
+        }
     }
 
     @Override

@@ -23,7 +23,7 @@ public class WaxyDraws extends BasePower{
 
     @Override
     public void atStartOfTurnPostDraw() {
-        addToBot(new DrawCardAction(1));
+        addToBot(new DrawCardAction(amount));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 
@@ -32,4 +32,5 @@ public class WaxyDraws extends BasePower{
         description = DESCRIPTIONS[0] + (amount) + DESCRIPTIONS[1];
     }
 }
+
 

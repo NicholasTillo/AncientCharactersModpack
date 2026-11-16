@@ -561,6 +561,10 @@ public abstract class BaseCard extends CustomCard {
         }
 
         super.applyPowers();
+        if (hasTag(CustomTags.WAX_MAGIC)) { //Wax Mastery: +1 to the wax amount shown as !M!
+            magicNumber = baseMagicNumber + basicmod.powers.WaxMastery.bonus();
+            isMagicNumberModified = magicNumber != baseMagicNumber;
+        }
     }
 
     @Override

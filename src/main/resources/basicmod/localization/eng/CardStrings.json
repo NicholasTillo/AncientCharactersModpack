@@ -136,6 +136,54 @@
     "NAME": "Tarot",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
+  "${modID}:ExpressiveIteration": {
+    "NAME": "Expressive Iteration",
+    "DESCRIPTION": "Look at the top 3 cards of your draw pile. NL Put one into your hand, Exhaust one, and leave one on top.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose a card to put into your hand.",
+      "Choose a card to Exhaust."
+    ]
+  },
+  "${modID}:Extinguish": {
+    "NAME": "Extinguish",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Lose 20 Heat. NL Shuffle a Burn into your draw pile."
+  },
+  "${modID}:LightTheCandle": {
+    "NAME": "Light the Candle",
+    "DESCRIPTION": "Gain !B! Block. NL If this is the third card played this turn, gain [E] ."
+  },
+  "${modID}:Stab": {
+    "NAME": "Stab",
+    "DESCRIPTION": "Deal !D! damage. NL Add a Burn into your hand."
+  },
+  "${modID}:HotWax": {
+    "NAME": "Hot Wax",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Wax Coated."
+  },
+  "${modID}:WaxingMoon": {
+    "NAME": "Waxing Moon",
+    "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL ${modID}:Chant 2 times."
+  },
+  "${modID}:Wisps": {
+    "NAME": "Wisps",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you Overheat, put this into your hand."
+  },
+  "${modID}:SacrificalLamb": {
+    "NAME": "Sacrificial Lamb",
+    "DESCRIPTION": "Deal !D! damage. NL If this kills a non-minion enemy, ${modID}:Chant 4 times."
+  },
+  "${modID}:TheWaxMaster": {
+    "NAME": "The Wax Master",
+    "DESCRIPTION": "Your Wax cards deal !M! additional damage and apply !M! more of their Wax effects."
+  },
+  "${modID}:ChantMaxing": {
+    "NAME": "Chant Maxing",
+    "DESCRIPTION": "At the start of your turn, ${modID}:Chant."
+  },
+  "${modID}:RecklessHeating": {
+    "NAME": "Reckless Heating",
+    "DESCRIPTION": "Gain 10 Heat for each Burn in your draw pile, hand and discard pile. NL Shuffle a Burn into your draw pile."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
