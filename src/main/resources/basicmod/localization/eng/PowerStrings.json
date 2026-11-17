@@ -66,6 +66,13 @@
       "At the start of your turn, add a random Chant card into your hand."
     ]
   },
+  "${modID}:HauntedPower": {
+    "NAME": "Haunted",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " cards you play are played twice. When this runs out, #yBurnout."
+    ]
+  },
   "${modID}:WaxCoated": {
     "NAME": "Wax Coated",
     "DESCRIPTIONS": [

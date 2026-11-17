@@ -232,6 +232,10 @@
     "NAME": "Unearth",
     "DESCRIPTION": "If you are in Burnout, put a card from your discard pile into your hand. It costs 0 this turn."
   },
+  "${modID}:Haunted": {
+    "NAME": "Haunted",
+    "DESCRIPTION": "The next !M! cards you play are played twice. NL Then, Burnout."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
