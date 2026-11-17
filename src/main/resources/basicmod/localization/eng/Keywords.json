@@ -1,5 +1,19 @@
 [
   {
+    "PROPER_NAME": "Chant",
+    "NAMES": [
+      "chant"
+    ],
+    "DESCRIPTION": "Advance the Chant track. Every 4 Chants, choose 1 of 3 Chant cards to add to your hand."
+  },
+  {
+    "PROPER_NAME": "Waxy",
+    "NAMES": [
+      "waxy"
+    ],
+    "DESCRIPTION": "A Waxy card is Ethereal and Exhausts when played."
+  },
+  {
     "PROPER_NAME": "This is displayed in the tooltip.",
     "NAMES": [
       "these",

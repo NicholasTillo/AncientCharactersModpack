@@ -4,5 +4,131 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:ChantPower": {
+    "NAME": "Chant",
+    "DESCRIPTIONS": [
+      "Chant #b",
+      " more time(s) to choose 1 of 3 Chant cards to add to your hand."
+    ]
+  },
+  "${modID}:WaxMastery": {
+    "NAME": "Wax Mastery",
+    "DESCRIPTIONS": [
+      "Your Wax cards deal #b",
+      " additional damage and apply that much more of their Wax effects."
+    ]
+  },
+  "${modID}:ChantMaxingPower": {
+    "NAME": "Chant Maxing",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Chant #b",
+      " time(s)."
+    ]
+  },
+  "${modID}:HeatingUpPower": {
+    "NAME": "Heating Up",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain #b",
+      " Heat."
+    ]
+  },
+  "${modID}:SelfPortraitPower": {
+    "NAME": "Self Portrait",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " Waxy copy(s) of the first card you played last turn into your hand. NL Waxy cards are Ethereal and Exhaust."
+    ]
+  },
+  "${modID}:Timer": {
+    "NAME": "Timer",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Overheat. You cannot Burnout. NL In #b",
+      " turn(s), die."
+    ]
+  },
+  "${modID}:WaxCoated": {
+    "NAME": "Wax Coated",
+    "DESCRIPTIONS": [
+      "At the end of its turn, takes #b",
+      " damage."
+    ]
+  },
+  "${modID}:MeltingBlock": {
+    "NAME": "Melting Block",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " Block at the end of your turn, then reduce this by 1."
+    ]
+  },
+  "${modID}:WaxStrength": {
+    "NAME": "Wax Strength",
+    "DESCRIPTIONS": [
+      "Attacks deal #b",
+      " additional damage. At the end of your turn, reduce this by 1."
+    ]
+  },
+  "${modID}:WaxWeakness": {
+    "NAME": "Wax Weakness",
+    "DESCRIPTIONS": [
+      "Attacks deal #b",
+      " less damage. At the end of its turn, reduce this by 1."
+    ]
+  },
+  "${modID}:WaxyDexterity": {
+    "NAME": "Waxy Dexterity",
+    "DESCRIPTIONS": [
+      "Cards grant #b",
+      " additional Block. At the end of your turn, reduce this by 1."
+    ]
+  },
+  "${modID}:WaxyDraws": {
+    "NAME": "Waxy Draws",
+    "DESCRIPTIONS": [
+      "For the next #b",
+      " turn(s), draw #b1 additional card at the start of your turn."
+    ]
+  },
+  "${modID}:LetHimCookPower": {
+    "NAME": "Let Him Cook",
+    "DESCRIPTIONS": [
+      "At the end of combat, if you Overheated this combat, heal #b",
+      " HP."
+    ]
+  },
+  "${modID}:FaithPower": {
+    "NAME": "Faith",
+    "DESCRIPTIONS": [
+      "Whenever you Chant, gain #b",
+      " Block."
+    ]
+  },
+  "${modID}:Heat": {
+    "NAME": "Heat",
+    "DESCRIPTIONS": [
+      "While you have #b",
+      " or more Heat, attacks deal #b1 additional damage and you gain [E] at the start of your turn. NL Upon reaching #b",
+      " Heat, lose it and start Overheating."
+    ]
+  },
+  "${modID}:LoseHeatPower": {
+    "NAME": "Heat Down",
+    "DESCRIPTIONS": [
+      "At the end of your turn, lose #b",
+      " Heat."
+    ]
+  },
+  "${modID}:Burnout": {
+    "NAME": "Burnout",
+    "DESCRIPTIONS": [
+      "Burnt out after Overheating."
+    ]
+  },
+
+  "${modID}:Overheat": {
+    "NAME": "Overheating",
+    "DESCRIPTIONS": [
+      "OVERHEATING, All Candles Ablaze"
+    ]
   }
 }

@@ -3,7 +3,11 @@ package basicmod.character;
 import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import basemod.animations.AbstractAnimation;
+import basicmod.cards.basic.AgonizingWords;
+import basicmod.cards.basic.Defend;
+import basicmod.cards.basic.Strike;
+import basicmod.cards.basic.WaxShield;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -20,7 +24,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.relics.BurningBlood;
+import basicmod.relics.SmolderingWick;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
@@ -37,7 +41,7 @@ public class CharFar extends CustomPlayer {
     public static final int ORB_SLOTS = 0;
 
     //Strings
-    private static final String ID = makeID("CharacterID"); //This should match whatever you have in the CharacterStrings.json file
+    private static final String ID = makeID("Apostle"); //This should match whatever you have in the CharacterStrings.json file
     private static String[] getNames() { return CardCrawlGame.languagePack.getCharacterString(ID).NAMES; }
     private static String[] getText() { return CardCrawlGame.languagePack.getCharacterString(ID).TEXT; }
 
@@ -47,9 +51,9 @@ public class CharFar extends CustomPlayer {
         //Library color is basically the same as card color, but you need both because that's how the game was made.
         @SpireEnum
         public static PlayerClass YOUR_CHARACTER;
-        @SpireEnum(name = "CHARACTER_GRAY_COLOR") // These two MUST match. Change it to something unique for your character.
+        @SpireEnum(name = "CHARACTER_VERMILLION_COLOR") // These two MUST match. Change it to something unique for your character.
         public static AbstractCard.CardColor CARD_COLOR;
-        @SpireEnum(name = "CHARACTER_GRAY_COLOR") @SuppressWarnings("unused")
+        @SpireEnum(name = "CHARACTER_VERMILLION_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
 
         //Character select images
@@ -119,7 +123,14 @@ public class CharFar extends CustomPlayer {
     public CharFar() {
         super(getNames()[0], Meta.YOUR_CHARACTER,
                 new CustomEnergyOrb(orbTextures, characterPath("energyorb/vfx.png"), layerSpeeds), //Energy Orb
-                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
+                new AbstractAnimation() { //No BaseMod animation; the Spine skeleton is loaded below instead.
+                    @Override
+                    public Type type() { return Type.NONE; }
+                });
+
+        //Spine model. skeleton.atlas points at ironclad.png in the same folder.
+        loadAnimation(characterPath("animation/skeleton.atlas"), characterPath("animation/skeleton.json"), 1.0F);
+        state.setAnimation(0, "Idle", true).setTimeScale(0.6F);
 
         initializeClass(null,
                 SHOULDER_2,
@@ -139,11 +150,16 @@ public class CharFar extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add(Strike_Red.ID);
-        retVal.add(Strike_Red.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Neutralize.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(AgonizingWords.ID);
+        retVal.add(WaxShield.ID);
 
         return retVal;
     }
@@ -152,7 +168,7 @@ public class CharFar extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(SmolderingWick.ID);
 
         return retVal;
     }
