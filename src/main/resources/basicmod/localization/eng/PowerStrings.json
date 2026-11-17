@@ -26,6 +26,27 @@
       " time(s)."
     ]
   },
+  "${modID}:HeatingUpPower": {
+    "NAME": "Heating Up",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain #b",
+      " Heat."
+    ]
+  },
+  "${modID}:SelfPortraitPower": {
+    "NAME": "Self Portrait",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " Waxy copy(s) of the first card you played last turn into your hand. NL Waxy cards are Ethereal and Exhaust."
+    ]
+  },
+  "${modID}:Timer": {
+    "NAME": "Timer",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Overheat. You cannot Burnout. NL In #b",
+      " turn(s), die."
+    ]
+  },
   "${modID}:WaxCoated": {
     "NAME": "Wax Coated",
     "DESCRIPTIONS": [

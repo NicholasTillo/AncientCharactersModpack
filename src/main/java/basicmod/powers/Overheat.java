@@ -59,8 +59,8 @@ public class Overheat extends BasePower{
     @Override
     public void atEndOfRound() {
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        addToBot(new ApplyPowerAction(owner,owner,new Burnout(owner)));
-
+        if (!owner.hasPower(Timer.POWER_ID)) //Timer keeps Burnout away
+            addToBot(new ApplyPowerAction(owner,owner,new Burnout(owner)));
     }
 
     @Override

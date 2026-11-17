@@ -184,6 +184,26 @@
     "NAME": "Reckless Heating",
     "DESCRIPTION": "Gain 10 Heat for each Burn in your draw pile, hand and discard pile. NL Shuffle a Burn into your draw pile."
   },
+  "${modID}:HeatingUp": {
+    "NAME": "Heating Up",
+    "DESCRIPTION": "Whenever you play a card, gain !M! Heat."
+  },
+  "${modID}:SelfPortrait": {
+    "NAME": "Self Portrait",
+    "DESCRIPTION": "At the start of your turn, add a ${modID}:Waxy copy of the first card you played last turn into your hand."
+  },
+  "${modID}:WaxSeal": {
+    "NAME": "Wax Seal",
+    "DESCRIPTION": "Apply !M! Wax Weakness to ALL enemies."
+  },
+  "${modID}:CompleteDevotion": {
+    "NAME": "Complete Devotion",
+    "DESCRIPTION": "Exhaust your hand. NL ${modID}:Chant once for each card Exhausted. NL Exhaust."
+  },
+  "${modID}:ConsumeBurns": {
+    "NAME": "Consume Burns",
+    "DESCRIPTION": "Exhaust ALL Burns in your draw pile, hand and discard pile. NL Gain !M! Strength for each."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
