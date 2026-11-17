@@ -73,6 +73,12 @@
       " cards you play are played twice. When this runs out, #yBurnout."
     ]
   },
+  "${modID}:TheWorldAflamePower": {
+    "NAME": "The World Aflame",
+    "DESCRIPTIONS": [
+      "Heat gained is doubled. Overheating does not lead to #yBurnout."
+    ]
+  },
   "${modID}:WaxCoated": {
     "NAME": "Wax Coated",
     "DESCRIPTIONS": [

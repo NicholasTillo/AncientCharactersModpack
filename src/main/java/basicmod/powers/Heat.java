@@ -34,7 +34,7 @@ public class Heat extends BasePower {
     //Tier 1: 1 extra energy each turn.
     @Override
     public void atStartOfTurn() {
-        if (tier() >= 1) {
+        if (tier() >= 1 && !owner.hasPower(Overheat.POWER_ID)) {
             flash();
             addToBot(new GainEnergyAction(1));
         }

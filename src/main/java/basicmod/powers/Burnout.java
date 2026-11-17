@@ -2,6 +2,10 @@ package basicmod.powers;
 
 import basicmod.actions.LoseHeatAction;
 import basicmod.actions.ResetHeatAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -26,18 +30,15 @@ public class Burnout extends BasePower {
 
     //Heat drops to 0 as soon as Burnout starts. GainHeatAction blocks Heat gain while this is active, so it stays at 0.
     @Override
+    //Overheat applies this at end of round, but the game runs the start-of-turn hooks before that
+    //apply resolves, so atStartOfTurnPostDraw would only fire a turn late. Queuing the Burns here
+    //puts them after the turn's DrawCardAction, which is already in the queue by now.
     public void onInitialApplication() {
         addToBot(new ResetHeatAction());
-    }
-
-    @Override
-    public void atEndOfRound() {
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-    }
-
-    @Override
-    public void atStartOfTurnPostDraw() {
-        super.atStartOfTurnPostDraw();
+        //Lose 3 Strength for this turn, the same way Piercing Wail does it (Artifact blocks the loss, so skip the give-back then).
+        addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, -3), -3));
+        if (!owner.hasPower(ArtifactPower.POWER_ID))
+            addToBot(new ApplyPowerAction(owner, owner, new GainStrengthPower(owner, 3), 3));
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
@@ -49,6 +50,11 @@ public class Burnout extends BasePower {
                 isDone = true;
             }
         });
+    }
+
+    @Override
+    public void atEndOfRound() {
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
     }
 
     @Override

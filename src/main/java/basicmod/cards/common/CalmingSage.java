@@ -28,6 +28,7 @@ public class CalmingSage extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
 
         setBlock(BLOCK, BLOCK_UPG);
+        setMagic(1, 1);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

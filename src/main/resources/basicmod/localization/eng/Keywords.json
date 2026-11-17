@@ -14,6 +14,52 @@
     "DESCRIPTION": "A Waxy card is Ethereal and Exhausts when played."
   },
   {
+    "PROPER_NAME": "Heat",
+    "NAMES": ["heat"],
+    "DESCRIPTION": "Builds toward your Max HP. At half, attacks deal 1 more damage and you gain 1 Energy each turn. At full, Overheat."
+  },
+  {
+    "PROPER_NAME": "Overheat",
+    "NAMES": ["overheat", "overheated"],
+    "DESCRIPTION": "Draw 3 cards, gain 3 Energy and 3 Strength this turn. Next turn, Burnout."
+  },
+  {
+    "PROPER_NAME": "Burnout",
+    "NAMES": ["Burnout", "burnout"],
+    "DESCRIPTION": "Temporarily lose 3 Strength, turn 3 random cards in your hand into burns."
+
+  },
+  {
+    "PROPER_NAME": "Wax Weakness",
+    "NAMES": ["wax weakness", "wax_weakness"],
+    "DESCRIPTION": "Attacks deal less damage. Reduced by 1 each turn."
+  },
+  {
+    "PROPER_NAME": "Waxy Draws",
+    "NAMES": ["waxy draws", "waxy_draws"],
+    "DESCRIPTION": "Draw 1 additional card at the start of your turn. Reduced by 1 each turn."
+  },
+  {
+    "PROPER_NAME": "Waxy Dexterity",
+    "NAMES": ["waxy dexterity", "waxy_dexterity"],
+    "DESCRIPTION": "Gain additional Block from cards. Reduced by 1 at the end of your turn."
+  },
+  {
+    "PROPER_NAME": "Wax Strength",
+    "NAMES": ["wax strength", "wax_strength"],
+    "DESCRIPTION": "Attacks deal additional damage. Reduced by 1 at the end of your turn."
+  },
+  {
+    "PROPER_NAME": "Melting Block",
+    "NAMES": ["melting block", "melting_block"],
+    "DESCRIPTION": "Gain that much Block at the end of your turn, then reduce it by 1."
+  },
+  {
+    "PROPER_NAME": "Wax Coated",
+    "NAMES": ["wax coated", "wax_coated"],
+    "DESCRIPTION": "Takes that much damage at the end of its turn."
+  },
+  {
     "PROPER_NAME": "This is displayed in the tooltip.",
     "NAMES": [
       "these",
