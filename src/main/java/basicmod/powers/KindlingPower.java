@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static basicmod.BasicMod.makeID;
 
 public class KindlingPower extends BasePower{
-    public static final String POWER_ID = makeID("KindlingPower");
+    public static final String POWER_ID = makeID(KindlingPower.class.getSimpleName());
 
     public KindlingPower(AbstractCreature owner, int amount) {
-        super(POWER_ID, PowerType.DEBUFF, false, owner, amount);
+        super(POWER_ID, PowerType.BUFF, false, owner, amount);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class KindlingPower extends BasePower{
     }
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        Heat heatP= ((Heat) owner.getPower("Heat"));
+        Heat heatP= ((Heat) owner.getPower(Heat.POWER_ID));
         if(heatP != null){
             if(heatP.tier() >= 1){
                 addToBot(new GainBlockAction(owner, 4));
@@ -36,7 +36,7 @@ public class KindlingPower extends BasePower{
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + (amount) + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0];
     }
 }
 

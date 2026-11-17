@@ -14,7 +14,7 @@ import static basicmod.BasicMod.makeID;
 
 //At the start of your turn, add amount Waxy (Ethereal + Exhaust) copies of the first card you played last turn to your hand.
 public class SelfPortraitPower extends BasePower {
-    public static final String POWER_ID = makeID("SelfPortraitPower");
+    public static final String POWER_ID = makeID(SelfPortraitPower.class.getSimpleName());
     private AbstractCard firstLastTurn; //Remembered at end of turn, because the game's own list is wiped before the next turn starts.
 
     public SelfPortraitPower(AbstractCreature owner, int amount) {

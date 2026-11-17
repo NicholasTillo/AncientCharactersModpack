@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import static basicmod.BasicMod.makeID;
 
 public class Overheat extends BasePower{
-    public static final String POWER_ID = makeID("Overheat");
+    public static final String POWER_ID = makeID(Overheat.class.getSimpleName());
     //The combat room of the most recent Overheat. Compare with AbstractDungeon.getCurrRoom() to ask "Overheated this combat?"
     public static AbstractRoom overheatedIn;
 

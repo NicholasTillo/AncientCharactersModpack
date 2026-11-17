@@ -204,6 +204,34 @@
     "NAME": "Consume Burns",
     "DESCRIPTION": "Exhaust ALL Burns in your draw pile, hand and discard pile. NL Gain !M! Strength for each."
   },
+  "${modID}:FinalLight": {
+    "NAME": "Final Light",
+    "DESCRIPTION": "For 3 turns, Overheat at the start of your turn and you cannot Burnout. NL Then, die. NL Exhaust."
+  },
+  "${modID}:PriestForm": {
+    "NAME": "Priest Form",
+    "DESCRIPTION": "At the start of your turn, add a random ${modID}:Chant card into your hand."
+  },
+  "${modID}:SnuffOut": {
+    "NAME": "Snuff Out",
+    "DESCRIPTION": "If the enemy's HP is at or below your Heat, kill it. NL Set your Heat to 9. NL Exhaust."
+  },
+  "${modID}:Kindling": {
+    "NAME": "Kindling",
+    "DESCRIPTION": "At the end of your turn, gain 10 Heat. NL If your Heat is at or above half of your Max HP, gain 4 Block instead."
+  },
+  "${modID}:Preperations": {
+    "NAME": "Preparations",
+    "DESCRIPTION": "${modID}:Chant. NL Put a card from your discard pile on top of your draw pile."
+  },
+  "${modID}:Reshape": {
+    "NAME": "Reshape",
+    "DESCRIPTION": "Whenever you draw a Burn, deal !M! damage to a random enemy."
+  },
+  "${modID}:Unearth": {
+    "NAME": "Unearth",
+    "DESCRIPTION": "If you are in Burnout, put a card from your discard pile into your hand. It costs 0 this turn."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."

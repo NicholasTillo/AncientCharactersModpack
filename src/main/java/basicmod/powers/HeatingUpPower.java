@@ -9,7 +9,7 @@ import static basicmod.BasicMod.makeID;
 
 //Whenever you play a card, gain amount Heat.
 public class HeatingUpPower extends BasePower {
-    public static final String POWER_ID = makeID("HeatingUpPower");
+    public static final String POWER_ID = makeID(HeatingUpPower.class.getSimpleName());
 
     public HeatingUpPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

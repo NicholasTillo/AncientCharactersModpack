@@ -21,6 +21,7 @@ public class Kindling extends BaseCard {
 
     public Kindling() {
         super(ID, info);
+        setMagic(1);
     }
 
     @Override

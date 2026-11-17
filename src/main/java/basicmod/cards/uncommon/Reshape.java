@@ -21,6 +21,7 @@ public class Reshape extends BaseCard {
 
     public Reshape() {
         super(ID, info);
+        setMagic(5, 3);
     }
 
     @Override

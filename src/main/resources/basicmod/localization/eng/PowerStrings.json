@@ -47,6 +47,25 @@
       " turn(s), die."
     ]
   },
+  "${modID}:KindlingPower": {
+    "NAME": "Kindling",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b10 Heat. If your Heat is at or above half of your Max HP, gain #b4 #yBlock instead."
+    ]
+  },
+  "${modID}:ReshapePower": {
+    "NAME": "Reshape",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yBurn, deal #b",
+      " damage to a random enemy."
+    ]
+  },
+  "${modID}:PriestFormPower": {
+    "NAME": "Priest Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add a random Chant card into your hand."
+    ]
+  },
   "${modID}:WaxCoated": {
     "NAME": "Wax Coated",
     "DESCRIPTIONS": [
@@ -54,21 +73,21 @@
       " damage."
     ]
   },
-  "${modID}:MeltingBlock": {
+  "${modID}:MeltingBlockPower": {
     "NAME": "Melting Block",
     "DESCRIPTIONS": [
       "Gain #b",
       " Block at the end of your turn, then reduce this by 1."
     ]
   },
-  "${modID}:WaxStrength": {
+  "${modID}:MeltingStrengthPower": {
     "NAME": "Wax Strength",
     "DESCRIPTIONS": [
       "Attacks deal #b",
       " additional damage. At the end of your turn, reduce this by 1."
     ]
   },
-  "${modID}:WaxWeakness": {
+  "${modID}:DebuffWaxWeakness": {
     "NAME": "Wax Weakness",
     "DESCRIPTIONS": [
       "Attacks deal #b",

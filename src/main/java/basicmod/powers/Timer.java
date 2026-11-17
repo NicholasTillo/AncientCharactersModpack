@@ -9,7 +9,7 @@ import static basicmod.BasicMod.makeID;
 
 //While active: Overheat every turn with no Burnout afterwards (see Overheat.atEndOfRound). The owner dies when it runs out.
 public class Timer extends BasePower{
-    public static final String POWER_ID = makeID("Timer");
+    public static final String POWER_ID = makeID(Timer.class.getSimpleName());
 
     public Timer(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

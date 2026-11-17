@@ -27,7 +27,7 @@ public class Preperations extends BaseCard {
 
     public Preperations() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-        setMagic(CHANT, CHANT_UPG);
+        setCostUpgrade(0);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

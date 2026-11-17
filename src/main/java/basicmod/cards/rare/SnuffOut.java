@@ -1,5 +1,6 @@
 package basicmod.cards.rare;
 
+import basicmod.powers.Heat;
 import basicmod.cards.BaseCard;
 import basicmod.character.CharFar;
 import basicmod.util.CardStats;
@@ -30,9 +31,11 @@ public class SnuffOut extends BaseCard {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(p.getPower("Heat").amount >= m.currentHealth){
+        Heat heat = (Heat) p.getPower(Heat.POWER_ID);
+        if (heat == null) return; //no Heat: nothing to kill with, nothing to reset
+        if(heat.amount >= m.currentHealth){
             m.damage(new DamageInfo(p,9999999));
         }
-        p.getPower("Heat").amount = 9;
+        heat.amount = 9;
     }
 }

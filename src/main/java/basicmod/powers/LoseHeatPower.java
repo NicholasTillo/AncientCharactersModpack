@@ -8,7 +8,7 @@ import static basicmod.BasicMod.makeID;
 
 //LoseStrengthPower, but for Heat: at the end of the turn, lose this much Heat and remove this power.
 public class LoseHeatPower extends BasePower {
-    public static final String POWER_ID = makeID("LoseHeatPower");
+    public static final String POWER_ID = makeID(LoseHeatPower.class.getSimpleName());
 
     public LoseHeatPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.DEBUFF, false, owner, amount);

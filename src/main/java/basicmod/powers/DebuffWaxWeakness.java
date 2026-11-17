@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static basicmod.BasicMod.makeID;
 
 public class DebuffWaxWeakness extends BasePower{
-    public static final String POWER_ID = makeID("WaxWeakness");
+    public static final String POWER_ID = makeID(DebuffWaxWeakness.class.getSimpleName());
 
     public DebuffWaxWeakness(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.DEBUFF, false, owner, amount);

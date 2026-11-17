@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static basicmod.BasicMod.makeID;
 
 public class MeltingStrengthPower extends BasePower{
-    public static final String POWER_ID = makeID("WaxStrength");
+    public static final String POWER_ID = makeID(MeltingStrengthPower.class.getSimpleName());
 
     public MeltingStrengthPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

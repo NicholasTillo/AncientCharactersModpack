@@ -8,7 +8,7 @@ import static basicmod.BasicMod.makeID;
 
 //Whenever the owner Chants, gain Block.
 public class FaithPower extends BasePower {
-    public static final String POWER_ID = makeID("FaithPower");
+    public static final String POWER_ID = makeID(FaithPower.class.getSimpleName());
 
     public FaithPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

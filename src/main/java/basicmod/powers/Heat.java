@@ -10,7 +10,7 @@ import static basicmod.BasicMod.makeID;
 //Heat builds toward THRESHOLD (the owner's max HP). Reaching it spends the Heat and starts Overheating.
 //Below that, Heat gives bonuses by tier; see tier().
 public class Heat extends BasePower {
-    public static final String POWER_ID = makeID("Heat");
+    public static final String POWER_ID = makeID(Heat.class.getSimpleName());
     public int THRESHOLD;
 
     public Heat(AbstractCreature owner, int amount) {

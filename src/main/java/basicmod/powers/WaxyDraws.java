@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static basicmod.BasicMod.makeID;
 
 public class WaxyDraws extends BasePower{
-    public static final String POWER_ID = makeID("WaxyDraws");
+    public static final String POWER_ID = makeID(WaxyDraws.class.getSimpleName());
 
     public WaxyDraws(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

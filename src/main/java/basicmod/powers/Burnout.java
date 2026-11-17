@@ -18,7 +18,7 @@ import static basicmod.BasicMod.makeID;
 import java.util.Collections;
 
 public class Burnout extends BasePower {
-    public static final String POWER_ID = makeID("Burnout");
+    public static final String POWER_ID = makeID(Burnout.class.getSimpleName());
 
     public Burnout(AbstractCreature owner) {
         super(POWER_ID, PowerType.BUFF, false, owner, 1);

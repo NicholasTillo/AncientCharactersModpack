@@ -1,5 +1,6 @@
 package basicmod.cards.uncommon;
 
+import basicmod.powers.Burnout;
 import basemod.BaseMod;
 import basicmod.actions.ChantAction;
 import basicmod.cards.BaseCard;
@@ -34,7 +35,7 @@ public class Unearth extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p.hasPower("Burnout")) {
+        if (p.hasPower(Burnout.POWER_ID)) {
             addToBot(new SelectCardsAction(p.discardPile.group, 1, "Choose a card to put into your hand.", cards -> {
                 for (AbstractCard c : cards) {
                     if (p.hand.size() >= BaseMod.MAX_HAND_SIZE) break;

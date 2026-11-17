@@ -13,7 +13,7 @@ import static basicmod.BasicMod.makeID;
 
 //At the end of combat, heal if the owner Overheated at any point this combat (same shape as the base game's Self Repair).
 public class ReshapePower extends BasePower {
-    public static final String POWER_ID = makeID("ReshapePower");
+    public static final String POWER_ID = makeID(ReshapePower.class.getSimpleName());
 
     public ReshapePower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);
@@ -31,4 +31,9 @@ public class ReshapePower extends BasePower {
     }
 
 
+
+    @Override
+    public void updateDescription() {
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+    }
 }

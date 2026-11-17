@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import static basicmod.BasicMod.makeID;
 
 public class MeltingBlockPower extends BasePower{
-    public static final String POWER_ID = makeID("MeltingBlock");
+    public static final String POWER_ID = makeID(MeltingBlockPower.class.getSimpleName());
 
     public MeltingBlockPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

@@ -7,7 +7,7 @@ import static basicmod.BasicMod.makeID;
 
 //The Chant track. Every THRESHOLD stacks are spent on a Chant reward: pick 1 of 3 Chant cards.
 public class ChantPower extends BasePower {
-    public static final String POWER_ID = makeID("ChantPower");
+    public static final String POWER_ID = makeID(ChantPower.class.getSimpleName());
     public static final int THRESHOLD = 4;
     public int completedThisTurn = 0; //Chants completed this turn; amount2 counts the whole combat.
 

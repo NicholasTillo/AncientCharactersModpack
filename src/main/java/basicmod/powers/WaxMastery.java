@@ -13,7 +13,7 @@ import static basicmod.BasicMod.makeID;
 //Damage and Block are handled here. Wax amounts on !M! come from BaseCard.applyPowers (CustomTags.WAX_MAGIC).
 //Cards that work their number out by hand (Wax Ball Slide, the X-cost Wax Weakness) add bonus() themselves.
 public class WaxMastery extends BasePower {
-    public static final String POWER_ID = makeID("WaxMastery");
+    public static final String POWER_ID = makeID(WaxMastery.class.getSimpleName());
 
     public WaxMastery(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

@@ -11,7 +11,7 @@ import static basicmod.BasicMod.makeID;
 
 //Gain Heat at the end of each turn, and for every point of HP lost in combat.
 public class SmolderingWick extends BaseRelic {
-    public static final String ID = makeID("SmolderingWick");
+    public static final String ID = makeID(SmolderingWick.class.getSimpleName());
     private static final int HEAT_PER_TURN = 5;
     private static final int HEAT_PER_DAMAGE = 2;
 
