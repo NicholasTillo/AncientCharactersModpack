@@ -19,7 +19,7 @@
   },
   "${modID}:AgonizingWords": {
     "NAME": "Agonizing Words",
-    "DESCRIPTION": " Chant NL Deal !D! Damage."
+    "DESCRIPTION": " ${modID}:Chant NL Deal !D! Damage."
   },
   "${modID}:Defend": {
     "NAME": "Defend",
@@ -43,7 +43,7 @@
   },
   "${modID}:ProtectiveChant": {
     "NAME": "Protective Chant",
-    "DESCRIPTION": "Gain !B! Block. NL If you completed a Chant this turn, gain !M! more."
+    "DESCRIPTION": "Gain !B! Block. NL If you completed a ${modID}:Chant this turn, gain !M! more."
   },
   "${modID}:BigFlammaFlex": {
     "NAME": "Big Flamma Flex",
@@ -251,13 +251,24 @@
       "Choose a card to turn into a Burn."
     ]
   },
+  "${modID}:ExhumeTwo": {
+    "NAME": "Exhume Two",
+    "DESCRIPTION": "Put !M! cards from your exhaust pile into your hand. They cost 0 for the rest of combat. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose cards to put into your hand."
+    ]
+  },
+  "${modID}:AbyssalPeering": {
+    "NAME": "Abyssal Peering",
+    "DESCRIPTION": "Draw !M! cards. NL If any of them are ${modID}:Chant cards, ${modID}:Chant."
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."
   },
   "${modID}:RitualJammaSlamma": {
     "NAME": "Ritual Jamma Slamma",
-    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each Chant completed this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each ${modID}:Chant completed this combat."
   },
   "${modID}:SturdyBody": {
     "NAME": "Sturdy Body",
@@ -277,11 +288,11 @@
   },
   "${modID}:RitualMultihit": {
     "NAME": "Ritual Multihit",
-    "DESCRIPTION": "Deal !D! damage. NL Hits an additional time for each Chant completed this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Hits an additional time for each ${modID}:Chant completed this combat."
   },
   "${modID}:Chant": {
     "NAME": "Chant",
-    "DESCRIPTION": "${modID}:Chant. NL If you have completed a Chant this turn, ${modID}:Chant !M! times instead."
+    "DESCRIPTION": "${modID}:Chant. NL If you have completed a ${modID}:Chant this turn, ${modID}:Chant !M! times instead."
   },
   "${modID}:RitualSlash": {
     "NAME": "Ritual Slash",
