@@ -1,11 +1,11 @@
 {
   "${modID}:Apostle": {
     "NAMES": [
-      "The  Apostle",
+      "The Apostle",
       "the Apostle"
     ],
     "TEXT": [
-      "Disciple of Tezctara.",
+      "Disciple of Tezcatara.",
       "PLACEHOLDER",
       "PLACEHOLDER"
     ]
