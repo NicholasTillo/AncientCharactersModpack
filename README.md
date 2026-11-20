@@ -1,36 +1,58 @@
-# Basic Mod
+# Disciples Of The Ancients
 
-This is an empty Slay the Spire mod + a modding tutorial.
+A Slay the Spire mod by Suspicious Chest Studios that adds a new playable character for each of the Ancients from
+Slay the Spire 2.
 
-This tutorial will help with setup and the basics of Slay the Spire modding, but it will not teach you Java. If you know nothing of Java or programming in general, you are strongly recommended to look up a free online course and do at least some of it. It is possible to do modding with almost no proper knowledge, but it will make things much more difficult.
-
----
-
-## Check the wiki to get started:
-
-https://github.com/Alchyr/BasicMod/wiki
+**Status:** in development. The first character, The Apostle, is playable and in playtesting.
 
 ---
 
-## Know what you're doing?
+## The Apostle
 
-You can still use this mod as a base, or you could use another template like https://github.com/DarkVexon/ProTemplate
+A disciple of Tezcatara. 70 HP, 99 starting gold, and a starter relic, Smoldering Wick, that builds Heat at the end of
+every turn and whenever you lose HP.
 
-You can find more options in the pins of the #modding-technical channel in the Slay the Spire discord server.
+The Apostle plays around three original mechanics:
+
+- **Heat:** builds toward your Max HP. At half, your attacks deal 1 more damage and you gain 1 Energy each turn. At
+  full, you **Overheat**: draw 3 cards and gain 3 Energy and 3 Strength. Next turn you **Burnout**: lose the 3 Strength
+  and 3 cards in your hand turn into Burns. Push your luck, or cool down.
+- **Chant:** a progress track. Every 4 Chants, choose 1 of 3 tiered Chant cards to add to your hand.
+- **Waxy:** short-lived wax buffs and debuffs (Wax Strength, Waxy Dexterity, Melting Block, Wax Coated and more) that
+  melt away turn by turn. Waxy cards are Ethereal and Exhaust when played.
+
+### Content so far
+
+| | Count |
+|---|---|
+| Cards | 98 |
+| Relics | 10 |
+| Potions | 3 |
+| Powers (status effects) | 31 |
 
 ---
 
-### Some HD Slay the Spire art assets (courtesy of Gremious, creator of DefaultMod):
+## Coming next
 
-Includes:
-- Empty Relic Template feat. empty bottle
-- Empty Card Template
-- Color-Changable cardback
-- A couple of HD Monster vectors (Louse, Nob, Sentry, Sneaky Gremlin)
-- A coupe of HD items (J.A.X., A Coin)
-- 2 people silhouettes
-- A curse Background
-
-https://github.com/Gremious/StS-DefaultModBase#some-hd-slay-the-spire-art-assets
+One character for each of the remaining Ancients.
 
 ---
+
+## Installing
+
+1. Install [ModTheSpire](https://steamcommunity.com/sharedfiles/filedetails/?id=1605060445),
+   [BaseMod](https://steamcommunity.com/sharedfiles/filedetails/?id=1605833019) and
+   [StSLib](https://steamcommunity.com/sharedfiles/filedetails/?id=1609158507) from the Steam Workshop.
+2. Build the mod with Maven (`mvn package`) and copy the jar from `target/` into your Slay the Spire `mods` folder.
+3. Launch with ModTheSpire and enable Disciples Of The Ancients.
+
+---
+
+## Team
+
+Suspicious Chest Studios: Nicholas Tillo, Raksha Rehal and Thijs Nusselder.
+
+## Credits
+
+Built on Alchyr's [BasicMod](https://github.com/Alchyr/BasicMod) template (MIT License), with HD template art from
+Gremious's [DefaultMod](https://github.com/Gremious/StS-DefaultModBase).
