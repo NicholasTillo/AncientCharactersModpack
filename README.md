@@ -9,8 +9,7 @@ Slay the Spire 2.
 
 ## The Apostle
 
-A disciple of Tezcatara. 70 HP, 99 starting gold, and a starter relic, Smoldering Wick, that builds Heat at the end of
-every turn and whenever you lose HP.
+A disciple of Tezcatara.
 
 The Apostle plays around three original mechanics:
 
