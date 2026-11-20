@@ -8,11 +8,79 @@
   },
   "${modID}:SmolderingWick": {
     "NAME": "Smoldering Wick",
-    "FLAVOR": "It never quite goes out.",
+    "FLAVOR": "PLACEHOLDER",
     "DESCRIPTIONS": [
       "At the end of your turn, gain #b",
       " Heat. Whenever you lose HP, gain #b",
       " Heat for each HP lost."
+    ]
+  },
+  "${modID}:PrayerBeads": {
+    "NAME": "Prayer Beads",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yChant."
+    ]
+  },
+  "${modID}:Hymnal": {
+    "NAME": "Hymnal",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "Cards gained from completing a #yChant are #yRetained."
+    ]
+  },
+  "${modID}:BeeswaxSeal": {
+    "NAME": "Beeswax Seal",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "#yWax #yCoated and #yWax #yWeakness on enemies do not decrease the first turn they are applied."
+    ]
+  },
+  "${modID}:CandleOfTheFirstApostle": {
+    "NAME": "Candle of the First Apostle",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "Replaces #rSmoldering #rWick. At the end of your turn, gain #b",
+      " #yHeat. Whenever you lose HP, gain #b",
+      " #yHeat for each HP lost. At the start of each combat, gain #yHeat equal to #b",
+      "% of your Max HP."
+    ]
+  },
+  "${modID}:WaxEffigy": {
+    "NAME": "Wax Effigy",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn. At the start of each combat, gain #b",
+      " #yWax #yFrail."
+    ]
+  },
+  "${modID}:Bellows": {
+    "NAME": "Bellows",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "#yHeat you gain from cards is increased by #b50%."
+    ]
+  },
+  "${modID}:ReinforcedSnuffer": {
+    "NAME": "Reinforced Snuffer",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b",
+      " #yWax #yStrength."
+    ]
+  },
+  "${modID}:ProjectorWisp": {
+    "NAME": "Projector Wisp",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "Whenever you #yOverheat, add a random #yWaxy Attack to your hand. It costs #b0 this turn."
+    ]
+  },
+  "${modID}:SoothingCream": {
+    "NAME": "Soothing Cream",
+    "FLAVOR": "PLACEHOLDER",
+    "DESCRIPTIONS": [
+      "Whenever you #yBurnout, only #b1 card is turned into a #yBurn instead of #b3."
     ]
   }
 }

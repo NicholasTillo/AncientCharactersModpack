@@ -24,7 +24,7 @@ public class WaxyDraws extends BasePower{
     @Override
     public void atStartOfTurnPostDraw() {
         addToBot(new DrawCardAction(amount));
-        addToBot(new ReducePowerAction(owner, owner, this, 1));
+        if (!PotentWaxPower.active()) addToBot(new ReducePowerAction(owner, owner, this, 1)); //Potent Wax stops the tick
     }
 
     @Override

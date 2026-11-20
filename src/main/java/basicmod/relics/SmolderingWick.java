@@ -36,7 +36,7 @@ public class SmolderingWick extends BaseRelic {
         AbstractPlayer p = AbstractDungeon.player;
         flash();
         addToBot(new RelicAboveCreatureAction(p, this));
-        addToBot(new GainHeatAction(amount));
+        addToBot(new GainHeatAction(amount, false));
     }
 
     @Override

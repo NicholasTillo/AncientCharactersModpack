@@ -8,5 +8,26 @@
       " into a description.",
       " Exactly how depends on the potion, and you can set it up however you want."
     ]
+  },
+  "${modID}:HotSauce": {
+    "NAME": "Hot Sauce",
+    "DESCRIPTIONS": [
+      "#yOverheat."
+    ]
+  },
+  "${modID}:ChantPotion": {
+    "NAME": "Chant Potion",
+    "DESCRIPTIONS": [
+      "#yChant #b",
+      " times."
+    ]
+  },
+  "${modID}:WaxLotion": {
+    "NAME": "Wax Lotion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yWax #yStrength and #b",
+      " #yWaxy #yDexterity."
+    ]
   }
 }

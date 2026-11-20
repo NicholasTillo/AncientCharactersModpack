@@ -2,6 +2,7 @@ package basicmod.powers;
 
 import basicmod.actions.LoseHeatAction;
 import basicmod.actions.ResetHeatAction;
+import basicmod.relics.SoothingCream;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
@@ -45,7 +46,8 @@ public class Burnout extends BasePower {
                 ArrayList<Integer> slots = new ArrayList<>();
                 for (int i = 0; i < AbstractDungeon.player.hand.size(); i++) slots.add(i);
                 Collections.shuffle(slots, new Random(AbstractDungeon.cardRandomRng.randomLong()));
-                for (int i = 0; i < Math.min(3, slots.size()); i++)
+                int burns = AbstractDungeon.player.hasRelic(SoothingCream.ID) ? 1 : 3;
+                for (int i = 0; i < Math.min(burns, slots.size()); i++)
                     addToTop(new TransformCardInHandAction(slots.get(i), new Burn()));
                 isDone = true;
             }

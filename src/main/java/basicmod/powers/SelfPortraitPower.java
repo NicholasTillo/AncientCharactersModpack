@@ -52,9 +52,14 @@ public class SelfPortraitPower extends BasePower {
     //Waxy = Ethereal and Exhaust.
     //ponytail: appends to the card's text once; a card that rebuilds its own text mid-combat loses the two words (the effect stays). Use a BaseMod AbstractCardModifier if that matters.
     public static AbstractCard makeWaxy(AbstractCard c) {
+        //Check the text too: BaseCard copies carry the text over but not the flags, so a copy of a Waxy card would add the words again.
         String extra = "";
-        if (!c.isEthereal) { c.isEthereal = true; extra += " NL Ethereal."; }
-        if (!c.exhaust && c.type != AbstractCard.CardType.POWER) { c.exhaust = true; extra += " NL Exhaust."; }
+        c.isEthereal = true;
+        if (!c.rawDescription.contains("Ethereal.")) extra += " NL Ethereal.";
+        if (c.type != AbstractCard.CardType.POWER) {
+            c.exhaust = true;
+            if (!c.rawDescription.contains("Exhaust.")) extra += " NL Exhaust.";
+        }
         if (!extra.isEmpty()) {
             c.rawDescription += extra;
             c.initializeDescription();

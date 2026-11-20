@@ -30,7 +30,7 @@ public class AbyssalPeering extends BaseCard {
 
     //A Chant card: one whose text uses the Chant keyword, or a Chant reward card.
     //ponytail: keyword-in-text check; cards that only say "Chant" without ${modID}: won't count. Add a CHANT tag if that matters.
-    private static boolean isChantCard(AbstractCard c) {
+    public static boolean isChantCard(AbstractCard c) {
         return c.rawDescription.contains(makeID("Chant"))
                 || c.hasTag(ChantTier.CHANT_COMMON) || c.hasTag(ChantTier.CHANT_UNCOMMON) || c.hasTag(ChantTier.CHANT_RARE);
     }

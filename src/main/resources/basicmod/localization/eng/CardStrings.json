@@ -262,6 +262,109 @@
     "NAME": "Abyssal Peering",
     "DESCRIPTION": "Draw !M! cards. NL If any of them are ${modID}:Chant cards, ${modID}:Chant."
   },
+  "${modID}:BuyBetterWax": {
+    "NAME": "Buy Better Wax",
+    "DESCRIPTION": "Double all Wax effects on you and the target enemy. NL Exhaust."
+  },
+  "${modID}:SteamWhistle": {
+    "NAME": "Steam Whistle",
+    "DESCRIPTION": "Whenever you ${modID}:Burnout, apply !M! Vulnerable to ALL enemies."
+  },
+  "${modID}:Motling": {
+    "NAME": "Motling",
+    "DESCRIPTION": "Whenever the enemy does anything other than attack, it takes !M! damage."
+  },
+  "${modID}:Transforphication": {
+    "NAME": "Transforphication",
+    "DESCRIPTION": "Exhaust any number of non-Status, non-Curse cards in your hand. NL Add a random card with their combined cost into your hand. It costs 0 this turn. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose any number of cards to Exhaust."
+    ]
+  },
+  "${modID}:Megaphone": {
+    "NAME": "Megaphone",
+    "DESCRIPTION": "Whenever you complete a ${modID}:Chant, pick 2 of the cards instead of 1."
+  },
+  "${modID}:FullExorcism": {
+    "NAME": "Full Exorcism",
+    "DESCRIPTION": "Deal !D! damage. NL Copy the enemy's ${modID}:Wax_Coated, ${modID}:Wax_Weakness and Motling to ALL other enemies."
+  },
+  "${modID}:Halloween": {
+    "NAME": "Halloween",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${modID}:Wax_Weakness and !M! ${modID}:Wax_Frail."
+  },
+  "${modID}:FormShell": {
+    "NAME": "Form Shell",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Thorns until your next turn. NL Lose 10 ${modID}:Heat."
+  },
+  "${modID}:WaxJet": {
+    "NAME": "Wax Jet",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Remove all Wax effects on you. NL Apply !M! ${modID}:Wax_Coated to ALL enemies for each stack removed."
+  },
+  "${modID}:LayeredWax": {
+    "NAME": "Layered Wax",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${modID}:Melting_Block."
+  },
+  "${modID}:Moonbeam": {
+    "NAME": "Moonbeam",
+    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less [E] for each Skill played this turn."
+  },
+  "${modID}:ChargeCrystals": {
+    "NAME": "Charge Crystals",
+    "DESCRIPTION": "Draw !M! cards. NL Next turn, gain [E] ."
+  },
+  "${modID}:FamiliarBeam": {
+    "NAME": "Familiar Beam",
+    "DESCRIPTION": "Summon a Familiar to deal !M! damage to ALL enemies. NL This damage ignores Block and is never modified."
+  },
+  "${modID}:PotentWax": {
+    "NAME": "Potent Wax",
+    "DESCRIPTION": "Wax buffs and debuffs no longer decrease."
+  },
+  "${modID}:Clone": {
+    "NAME": "Clone",
+    "DESCRIPTION": "Lose !M! HP. NL Summon a Clone with half your Max HP. It takes attack damage before you. NL Exhaust."
+  },
+  "${modID}:ChantBeaming": {
+    "NAME": "Chant Beaming",
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL Add a copy of the last ${modID}:Chant card you played into your hand."
+  },
+  "${modID}:SuperWhirlwind": {
+    "NAME": "Super Whirlwind",
+    "DESCRIPTION": "Deal X damage to ALL enemies !M! times."
+  },
+  "${modID}:DrainingWax": {
+    "NAME": "Draining Wax",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${modID}:Wax_Strength. NL Apply !M! ${modID}:Wax_Weakness."
+  },
+  "${modID}:Hinder": {
+    "NAME": "Hinder",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! ${modID}:Wax_Weakness."
+  },
+  "${modID}:LetsGoGambling": {
+    "NAME": "Let's Go Gambling",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! random Wax buffs."
+  },
+  "${modID}:LockDoom": {
+    "NAME": "Lock Doom",
+    "DESCRIPTION": "When this enemy dies, draw 3 cards, gain [E] [E] [E] and ${modID}:Chant 3 times. NL Exhaust."
+  },
+  "${modID}:SpeedrunningChant": {
+    "NAME": "Speedrunning Chant",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Chant."
+  },
+  "${modID}:VoidTouch": {
+    "NAME": "Void Touch",
+    "DESCRIPTION": "${modID}:Chant !M! times. NL Shuffle a *Void into your draw pile."
+  },
+  "${modID}:FlurryOfGlart": {
+    "NAME": "Flurry of Glart",
+    "DESCRIPTION": "Deal !D! damage for each other card played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Hits ",
+      " times.)"
+    ]
+  },
   "${modID}:RitualDefend": {
     "NAME": "Ritual Defend",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak. NL ${modID}:Chant."

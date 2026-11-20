@@ -60,6 +60,11 @@
     "DESCRIPTION": "Takes that much damage at the end of its turn."
   },
   {
+    "PROPER_NAME": "Wax Frail",
+    "NAMES": ["wax frail", "wax_frail"],
+    "DESCRIPTION": "Cards grant less Block. Reduced by 1 at the end of each turn."
+  },
+  {
     "PROPER_NAME": "This is displayed in the tooltip.",
     "NAMES": [
       "these",

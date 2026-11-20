@@ -5,6 +5,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import basicmod.cards.BaseCard;
 import basicmod.character.CharFar;
+import basicmod.potions.BasePotion;
 import basicmod.relics.BaseRelic;
 import basicmod.util.GeneralUtils;
 import basicmod.util.KeywordInfo;
@@ -103,6 +104,12 @@ public class BasicMod implements
         //If you want to set up a config panel, that will be done here.
         //You can find information about this on the BaseMod wiki page "Mod Config and Panel".
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+
+        //Registers every potion in the potions package. Colours are null because each potion sets its own.
+        new AutoAdd(modID)
+                .packageFilter(BasePotion.class)
+                .any(BasePotion.class, (info, potion) ->
+                        BaseMod.addPotion(potion.getClass(), null, null, null, potion.ID, potion.playerClass));
     }
 
     /*----------Localization----------*/

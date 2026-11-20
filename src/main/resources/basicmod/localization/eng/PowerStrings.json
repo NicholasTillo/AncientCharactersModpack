@@ -79,6 +79,60 @@
       "Heat gained is doubled. Overheating does not lead to #yBurnout."
     ]
   },
+  "${modID}:SteamWhistlePower": {
+    "NAME": "Steam Whistle",
+    "DESCRIPTIONS": [
+      "Whenever you #yBurnout, apply #b",
+      " #yVulnerable to ALL enemies."
+    ]
+  },
+  "${modID}:MotlingPower": {
+    "NAME": "Motling",
+    "DESCRIPTIONS": [
+      "Whenever this enemy does anything other than attack, it takes #b",
+      " damage."
+    ]
+  },
+  "${modID}:MegaphonePower": {
+    "NAME": "Megaphone",
+    "DESCRIPTIONS": [
+      "Whenever you complete a Chant, pick #b",
+      " of the cards instead of 1."
+    ]
+  },
+  "${modID}:WaxFrail": {
+    "NAME": "Wax Frail",
+    "DESCRIPTIONS": [
+      "Cards grant #b",
+      " less Block. At the end of your turn, reduce this by 1."
+    ]
+  },
+  "${modID}:TemporaryThorns": {
+    "NAME": "Temporary Thorns",
+    "DESCRIPTIONS": [
+      "At the start of your turn, lose #b",
+      " Thorns."
+    ]
+  },
+  "${modID}:PotentWaxPower": {
+    "NAME": "Potent Wax",
+    "DESCRIPTIONS": [
+      "Wax buffs and debuffs no longer decrease."
+    ]
+  },
+  "${modID}:ClonePower": {
+    "NAME": "Clone",
+    "DESCRIPTIONS": [
+      "Your Clone has #b",
+      " HP. It takes attack damage before your Block and HP. Leftover damage carries over to you."
+    ]
+  },
+  "${modID}:LockDoomPower": {
+    "NAME": "Doom Locked",
+    "DESCRIPTIONS": [
+      "When this enemy dies, the player draws 3 cards, gains 3 Energy and Chants 3 times."
+    ]
+  },
   "${modID}:WaxCoated": {
     "NAME": "Wax Coated",
     "DESCRIPTIONS": [

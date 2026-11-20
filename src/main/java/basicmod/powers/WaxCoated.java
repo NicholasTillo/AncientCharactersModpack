@@ -1,6 +1,8 @@
 package basicmod.powers;
 
+import basicmod.relics.BeeswaxSeal;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,7 +15,9 @@ public class WaxCoated extends BasePower{
 
     public WaxCoated(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.DEBUFF, false, owner, amount);
+        justApplied = !owner.isPlayer && AbstractDungeon.player.hasRelic(BeeswaxSeal.ID);
     }
+    private boolean justApplied; //Beeswax Seal: stays for one extra tick on enemies
 
     @Override
     public void stackPower(int stackAmount) {
@@ -22,7 +26,8 @@ public class WaxCoated extends BasePower{
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         addToBot(new DamageAction(owner, new DamageInfo(owner, amount)));
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        if (justApplied) justApplied = false;
+        else addToBot(new RemoveSpecificPowerAction(owner, owner, this));
     }
 
     @Override

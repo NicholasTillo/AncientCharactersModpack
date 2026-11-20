@@ -1,6 +1,7 @@
 package basicmod.actions;
 
 import basicmod.cards.special.ChantTier;
+import basicmod.powers.MegaphonePower;import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -79,6 +80,13 @@ public class ChantRewardAction extends AbstractGameAction {
         if (duration == Settings.ACTION_DUR_FAST) {
             ArrayList<AbstractCard> choices = generateChoices();
             if (choices.isEmpty()) {
+                isDone = true;
+                return;
+            }
+            int picks = 1 + MegaphonePower.extraPicks();
+            if (picks > 1) { //Megaphone: pick several of the offered cards instead of one
+                addToTop(new SelectCardsAction(choices, Math.min(picks, choices.size()), "Choose " + picks + " cards.",
+                        picked -> { for (AbstractCard c : picked) addToTop(new MakeTempCardInHandAction(c.makeStatEquivalentCopy())); }));
                 isDone = true;
                 return;
             }

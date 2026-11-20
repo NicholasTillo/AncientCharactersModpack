@@ -24,7 +24,7 @@ public class WaxyDexterity extends BasePower{
     }
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        addToBot(new ReducePowerAction(owner, owner, this, 1));
+        if (!PotentWaxPower.active()) addToBot(new ReducePowerAction(owner, owner, this, 1)); //Potent Wax stops the tick
     }
 
     @Override

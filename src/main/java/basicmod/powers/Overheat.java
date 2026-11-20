@@ -2,6 +2,8 @@ package basicmod.powers;
 
 import basemod.BaseMod;
 import basicmod.cards.common.Wisps;
+import basicmod.relics.ProjectorWisp;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.evacipated.cardcrawl.mod.stslib.patches.bothInterfaces.OnReceivePowerPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -40,6 +42,13 @@ public class Overheat extends BasePower{
         addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, 3), 3));
         addToBot(new ApplyPowerAction(owner, owner, new LoseStrengthPower(owner, 3), 3));
         AbstractPlayer p = AbstractDungeon.player;
+        if (p.hasRelic(ProjectorWisp.ID)) {
+            AbstractCard attack = ProjectorWisp.randomWaxyAttack();
+            if (attack != null) {
+                p.getRelic(ProjectorWisp.ID).flash();
+                addToBot(new MakeTempCardInHandAction(attack, 1));
+            }
+        }
         for (CardGroup pile : new CardGroup[]{p.drawPile, p.discardPile}) {
             for (AbstractCard c : new ArrayList<>(pile.group)) {
                 if (c instanceof Wisps && p.hand.size() < BaseMod.MAX_HAND_SIZE) {
